@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+:root {
+  --bg: #0f1222;
+  --panel: #161a2e;
+  --panel-2: #1b2040;
+  --text: #e9ecf8;
+  --muted: #a9b0c7;
+  --accent: #6b8dff;
+  --accent-2: #20e3b2;
+  --card: #12152b;
+  --border: rgba(255, 255, 255, .08);
+  --shadow: 0 10px 30px rgba(0, 0, 0, .25);
+  --radius: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,
+body {
+  height: 100%
 }
 
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 10% -10%, #1e2348 0%, transparent 60%),
+    radial-gradient(1200px 800px at 90% -10%, #15204a 0%, transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* ===== Layout ===== */
+.app {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive */
+@media (max-width: 1200px) {
+  .card {
+    grid-column: span 4
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 82px 1fr
+  }
+
+  .brand span {
+    display: none
+  }
+
+  .side-link span {
+    display: none
+  }
+
+  .side-link {
+    justify-content: center
+  }
+
+  .search {
+    min-width: 180px
+  }
+
+  .card {
+    grid-column: span 6
+  }
+}
+
+@media (max-width: 640px) {
+  .app {
+    grid-template-columns: 1fr
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center
+  }
+
+  .help {
+    display: none
+  }
+
+  .card {
+    grid-column: span 12
   }
 }
