@@ -6,10 +6,10 @@ import Topbar from './component/Topbar/Topbar';
 function App() {
   return (
     <div class="app">
-      <Sidebar></Sidebar>
+      <Sidebar />
       <main class="main">
-        <Topbar></Topbar>
-        <Main></Main>
+        <Topbar />
+        <Main />
       </main>
     </div>
   );
