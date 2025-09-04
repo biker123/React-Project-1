@@ -1,48 +1,12 @@
 import React from 'react';
 import '../Cards/Cards.css';
 
-export default function Cards() {
-    let cardObj = [{
-        cardImg: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop",
-        cardTitle: "Universe",
-        cardMeta: "Recommended • Multi-color",
-        cardLinkText: "View Details"
-    },
-    {
-        cardImg: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop",
-        cardTitle: "Second Card",
-        cardMeta: "Recommended • Multi-color",
-        cardLinkText: "View Details"
-    },
-    {
-        cardImg: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop",
-        cardTitle: "Third Card",
-        cardMeta: "Recommended • Multi-color",
-        cardLinkText: "View Details"
-    },
-    {
-        cardImg: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop",
-        cardTitle: "Fourth Card",
-        cardMeta: "Recommended • Multi-color",
-        cardLinkText: "View Details"
-    },
-    {
-        cardImg: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop",
-        cardTitle: "Fifth Card",
-        cardMeta: "Recommended • Multi-color",
-        cardLinkText: "View Details"
-    },
-    {
-        cardImg: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop",
-        cardTitle: "Six Card",
-        cardMeta: "Recommended • Multi-color",
-        cardLinkText: "View Details"
-    }
-    ];
+export default function Cards(props) {
+    const { bikram } = props;
     return (
         <React.Fragment>
             {
-                cardObj.map((element, key) => (
+                bikram.map((element, key) => (
                     <article className="card" key={element.cardTitle}>
                         <div className="card-img">
                             <img src={element.cardImg} />
@@ -59,5 +23,14 @@ export default function Cards() {
                 ))
             }
         </React.Fragment>
+    )
+}
+
+export function Box() {
+
+    return (
+        <div className="card-img">
+           <p>sfhuisfhuhufdu</p>
+        </div>
     )
 }
