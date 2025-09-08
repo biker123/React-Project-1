@@ -27,10 +27,6 @@ export default function Sidebar() {
           <span>Swap</span>
         </a>
         <a className="side-link" href="#">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l4 7h7l-5.5 4 2.5 8-8-5-8 5 2.5-8L1 9h7l4-7z"/></svg>
-          <span>NFTs</span>
-        </a>
-        <a className="side-link" href="#">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09A6.003 6.003 0 0122 9c0 3.31-2.69 6-6 6h-1v3l-3-2.65z"/></svg>
           <span>My Favorites</span>
         </a>
