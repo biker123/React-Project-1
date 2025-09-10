@@ -1,5 +1,6 @@
 import React from 'react';
 import "../Sidebar/Sidebar.css";
+import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
   return (
@@ -18,10 +19,10 @@ export default function Sidebar() {
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 10.5l8-6 8 6V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5z"/></svg>
           <span>Dashboard</span>
         </a>
-        <a className="side-link" href="#">
+        <Link to="buy-sell" className="side-link">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
           <span>Buy & Sell</span>
-        </a>
+        </Link>
         <a className="side-link" href="#">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 100 18 9 9 0 000-18zm1 9.5V7h-2v7h5v-2h-3z"/></svg>
           <span>Swap</span>

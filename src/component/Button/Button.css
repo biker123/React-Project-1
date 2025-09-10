@@ -10,6 +10,7 @@
     background: #0f163a;
     border: 1px solid var(--border);
     font-size: 13px;
+    cursor: pointer;
 }
 
 .card-link:hover {

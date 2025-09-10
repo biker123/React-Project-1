@@ -2,8 +2,8 @@ import React from 'react';
 import '../Cards/Cards.css';
 import Button from '../Button/Button';
 
-export default function Cards(props) {
-    const { cardProps } = props;
+export default function Cards(parameter) {
+    const { cardProps } = parameter;
     return (
         <React.Fragment>
             {
@@ -23,6 +23,7 @@ export default function Cards(props) {
         </React.Fragment>
     )
 }
+
 
 //  naming export //
 // export function Box() {
