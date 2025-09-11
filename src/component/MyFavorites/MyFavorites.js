@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function MyFavorites() {
   return (
-    <div>MyFavorites</div>
+    <div className='cmn-padding-cls'>MyFavorites</div>
   )
 }

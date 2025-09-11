@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Swap() {
   return (
-    <div>Swap</div>
+    <div className='cmn-padding-cls'>Swap</div>
   )
 }

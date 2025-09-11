@@ -1,5 +1,7 @@
 import "./App.css";
 import BuySell from "./component/BuyAndSell/BuySell";
+import Swap from "./component/Swap/Swap";
+import MyFavorites from "./component/MyFavorites/MyFavorites";
 // import { Box } from './component/Cards/Cards';
 import Main from "./component/Main/Main";
 import Sidebar from "./component/Sidebar/Sidebar";
@@ -14,6 +16,12 @@ function App() {
         <Topbar />
         <Routes>
           <Route path="buy-sell" element={<BuySell />} />
+        </Routes>
+        <Routes>
+          <Route path="swap" element={<Swap />} />
+        </Routes>
+        <Routes>
+          <Route path="my-favorites" element={<MyFavorites />} />
         </Routes>
         <Main />
         {/* <Box /> */}

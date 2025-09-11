@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function BuySell() {
   return (
-    <div>BuySell</div>
+    <div className='cmn-padding-cls'>BuySell</div>
   )
 }
