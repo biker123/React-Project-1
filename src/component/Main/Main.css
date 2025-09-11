@@ -20,3 +20,20 @@
     gap: 10px
 }
 
+/* counter css */
+
+.use-state-exm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.use-state-exm button{
+    width: 25px;
+    height: 25px;
+}
+
+.use-state-exm button span{
+    min-width: 100px;
+}
