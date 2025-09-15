@@ -1,0 +1,16 @@
+.use-state-exm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px 15px;
+}
+
+.use-state-exm .cmn-btn-counter{
+    cursor: pointer;
+    padding: 15px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

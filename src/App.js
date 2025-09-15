@@ -7,12 +7,14 @@ import Main from "./component/Main/Main";
 import Sidebar from "./component/Sidebar/Sidebar";
 import Topbar from "./component/Topbar/Topbar";
 import { Routes, Route } from "react-router-dom";
+import Counter from "./component/Counter/Counter";
+import Form from "./component/FormUseState/Form";
 
 function App() {
   return (
-    <div class="app">
+    <div className="app">
       <Sidebar />
-      <main class="main">
+      <main className="main">
         <Topbar />
         <Routes>
           <Route path="buy-sell" element={<BuySell />} />
@@ -22,6 +24,12 @@ function App() {
         </Routes>
         <Routes>
           <Route path="my-favorites" element={<MyFavorites />} />
+        </Routes>
+        <Routes>
+          <Route path="counter" element={<Counter />} />
+        </Routes>
+        <Routes>
+          <Route path="form-use-state" element={<Form />} />
         </Routes>
         <Main />
         {/* <Box /> */}
