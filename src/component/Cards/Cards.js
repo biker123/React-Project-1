@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../Cards/Cards.css';
 import Button from '../Button/Button';
 
@@ -18,12 +18,13 @@ export default function Cards(parameter) {
                         </div>
                         <div className="card-body">
                             <h3 className="card-title">{element.cardTitle}</h3>
-                            <div className="card-meta">{element.cardMeta}</div>
+                            {/* <div className="card-meta">{element.cardMeta}</div> */}
                             <Button btnText = {element.cardLinkText} onClick={()=>toggleCardDetails(element.id)}></Button>
                             {/* // Details show click to buttons // */}
                             {activeCard === element.id && (
                             <div className="card-details">
                                 <p>{element.cardTitle}</p>
+                                <p>{element.cardMeta}</p>
                                 <p>{element.detailsCards}</p>
                             </div>
                             )}
@@ -34,7 +35,9 @@ export default function Cards(parameter) {
         </React.Fragment>
     )
 }
-
+// useEffect(() => {
+    
+// },[])
 
 //  naming export //
 // export function Box() {

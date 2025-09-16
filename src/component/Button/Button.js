@@ -5,7 +5,7 @@ import "../Button/Button.css";
 export default function Button({btnText, onClick}) {
   // const navigate = useNavigate();
   // const goToBuySell = () => {
-  //   navigate("/buy-sell");
+  //   navigate(`/buy-sell?id={id}`);
   // };
   return (
     <React.Fragment>
