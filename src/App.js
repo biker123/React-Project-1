@@ -31,6 +31,9 @@ function App() {
         <Routes>
           <Route path="form-use-state" element={<Form />} />
         </Routes>
+        <Routes>
+          <Route path="home" element={<Form />} />
+        </Routes>
         <Main />
         {/* <Box /> */}
       </main>
