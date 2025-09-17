@@ -1,0 +1,91 @@
+.form-usestate-mainform{
+    max-width: 500px;
+    background: #b6a9ff;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.form-usestate-mainform .form-simple-cls input:not(input[type="checkbox"],input[type="radio"]){
+    width: 100%;
+    min-height: 35px;
+    padding: 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #000611;
+}
+
+
+.form-usestate-mainform .form-simple-cls button{
+    background-color: rgb(255, 129, 56);
+    color: #fff;
+    padding: 10px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.form-simple-cls label,.form-simple-cls p{
+    color: #000;
+}
+
+.form-simple-cls label{
+    display: block;
+    margin-bottom: 12px;
+}
+
+.form-simple-cls p{
+    margin: 12px 0;
+}
+
+.card {
+  width: 280px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #666;
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.card button {
+  margin-top: 12px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background: #218838;
+}
+
+    

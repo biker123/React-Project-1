@@ -9,6 +9,8 @@ import Topbar from "./component/Topbar/Topbar";
 import { Routes, Route } from "react-router-dom";
 import Counter from "./component/Counter/Counter";
 import Form from "./component/FormUseState/Form";
+import Home from "./component/Home/Home";
+import Details from "./component/Details/Details";
 
 function App() {
   return (
@@ -17,24 +19,15 @@ function App() {
       <main className="main">
         <Topbar />
         <Routes>
+          <Route path="/" element={<Home />} /> 
+          <Route path="/details/:id" element={<Details />} />
           <Route path="buy-sell" element={<BuySell />} />
-        </Routes>
-        <Routes>
           <Route path="swap" element={<Swap />} />
-        </Routes>
-        <Routes>
           <Route path="my-favorites" element={<MyFavorites />} />
-        </Routes>
-        <Routes>
           <Route path="counter" element={<Counter />} />
-        </Routes>
-        <Routes>
           <Route path="form-use-state" element={<Form />} />
         </Routes>
-        <Routes>
-          <Route path="home" element={<Form />} />
-        </Routes>
-        <Main />
+        {/* <Main /> */}
         {/* <Box /> */}
       </main>
     </div>
