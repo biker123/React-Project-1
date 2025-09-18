@@ -5,7 +5,7 @@ export default function Details() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // data state diye pathano hoyeche
+  // data state diye pathacchi //
   const data = location.state;
 
   if (!data) {

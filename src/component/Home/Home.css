@@ -44,15 +44,17 @@
 }
 
 .card {
-  width: 280px;
+  max-width: 450px;
+  margin: 25px 15px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(206, 206, 206, 0.2);
   transition: 0.3s ease;
   text-align: center;
   font-family: Arial, sans-serif;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .card:hover {
@@ -88,4 +90,6 @@
   background: #218838;
 }
 
-    
+.rounded.shadow{
+  width: 100%;
+}
